@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário de pesquisa</h1>
+        <p>Obrigado por dedicar se tempo visitanso meu projeto.</p>
+    </header>
+    <main>
+        <form action="pesquisa.js" method="post" autocomplete="on">
+            <p>
+                <label for="inome">Nome</label> <br>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="imail">Email</label> <br>
+                <input type="email" name="mail" id="imail">
+            </p>
+            <p>
+                <label for="txtidade">Idade (Opicional)</label> <br> 
+                <input type="text" name="idade" id="txtidade">
+            </p>
+            <p>
+                <label for="cargo">Qual dessas opções define seu atual cargo?</label> <br>
+                <input name="cargo" id="cargo" list="opcoes">
+                <datalist id="opcoes">
+                    <option value="Desempregado"></option>
+                    <option value="Estudante"></option>
+                    <option value="Ensino Superior"></option>
+                    <option value="Estagiário"></option>
+                    <option value="Empregado"></option>
+                    <option value="Outros" ></option>
+                </datalist>
+            </p>
+
+            <p>
+                <label for="perg">Você planeja atuar na área de programação</label> <br>
+                <p><input type="radio" name="perg" id="perg">Sim</p>
+                <p><input type="radio" name="perg" id="perg">Não</p>
+                <p><input type="radio" name="perg" id="perg">Não sei</p>
+            </p>
+            <p>
+                <label for="livre">No seu tempo livre, o que você gosta de fazer ?</label> <br>
+                <input type="text" name="livre" id="livre">
+            </p>
+
+            <p>
+                <label for="acess">Em qual dessas opções você acessou o site</label>
+                <p><input type="checkbox" name="acess" id="acess">Github</p>
+                <p><input type="checkbox" name="acess" id="acess">Por um conhecido</p>
+                <p><input type="checkbox" name="acess" id="acess">Instagram</p>
+                <p><input type="checkbox" name="acess" id="acess">Linkedin</p>
+            </p>
+
+            <p>
+                <label for="coment">Algum comentário ou sugestão?</label> <br>
+                <textarea placeholder="Digite sua mensagem" ></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </main>
+    <footer>
+        <p>Formulário criado por Renan Saravali</p>
+    </footer>
+</body>
+</html>
